@@ -61,9 +61,7 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="card-footer">
-                            <button class="btn btn-primary" type="button" id="imprimir"><i class="icon-print"></i>
-                                Imprimir</button>
+                        <div class="card-footer">                            
                             <button class="btn btn-primary" type="button" id="cancelar"><i class="icon-reply"></i>
                                 Cancelar</button>
 

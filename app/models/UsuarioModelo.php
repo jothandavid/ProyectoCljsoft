@@ -81,4 +81,26 @@ class UsuarioModelo
             return false;
         }
     }
+
+     /**
+     * validarIngreso
+     *
+     * @param  mixed $datos
+     * @return void
+     */
+    public function validarIngreso($datos)
+    {
+        $this->db->query('SELECT * FROM tbl_usuario WHERE ususuario = :usuario ');
+        $this->db->bind(':usuario', $datos['usuario']);
+        $resultados = $this->db->registros();
+        if (count($resultados)<=0) {
+            return false;
+        } else {
+            if (password_verify($datos['password'], $resultados[0]->usclave)) {
+                return $resultados;
+            } else {
+                return false;
+            }
+        }
+    }
 }

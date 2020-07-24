@@ -51,11 +51,8 @@
                             </div>                            
                         </div>
                         <div class="card-footer">
-                            <button class="btn btn-primary" type="button" id="imprimir"><i class="icon-print"></i>
-                                Imprimir</button>
                             <button class="btn btn-primary" type="button" id="cancelar"><i class="icon-reply"></i>
                                 Cancelar</button>
-
                             <input id="guardar" class="btn btn-success" type="submit" value="Guardar">
                         </div>
                     </form>
