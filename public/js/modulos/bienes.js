@@ -52,6 +52,7 @@ var listarbienes = function () {
     });
     editar("#mitabla tbody", tabla);
     eliminar("#mitabla tbody", tabla);
+    imprimir("#mitabla tbody", tabla);
 };
 
 var nuevo = function () {
@@ -143,6 +144,12 @@ var eliminar = function (tbody, table) {
         } else {
             alert("Operacion cancelada por el usuario.");
         }
+    });
+};
+
+var imprimir = function (tbody, table) {
+    $(tbody).on("click", "button.imprimir", function () {
+        window.location.href = "http://localhost/ProyectoCljsoft/RptBienes/";
     });
 };
 

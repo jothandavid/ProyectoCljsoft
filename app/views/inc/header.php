@@ -6,6 +6,8 @@
     <title>CLJSFT | Proyecto Formativo</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- CSS -->
@@ -24,17 +26,9 @@
             <li>
             <a href="<?php echo RUTA_URL . '/index' ?>">Inicio</a>
             </li>
+           
             <li>
-            <a href="<?= RUTA_URL; ?>/usuario">Usuarios</a>
-            </li>
-            <li>
-            <a href="<?= RUTA_URL; ?>/personal">Personal</a>
-            </li>
-            <li>
-            <a href="<?= RUTA_URL; ?>/bienes">Bienes</a>
-            </li>
-            <li>
-            <a href="<?= RUTA_URL; ?>/controles">Control E/S</a>
+            <a class="dropdown-item" data-toggle="modal" data-target="#login">Ingresar al sistema</a>
             </li>
         </ul>
         <!-- Barra Navegador - Parte Derecha -->
